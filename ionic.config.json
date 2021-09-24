@@ -1,0 +1,7 @@
+{
+  "name": "pendientes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
