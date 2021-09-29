@@ -44,10 +44,12 @@ export class Tab1Page {
           console.log(data);
           if (data.titulo.length === 0) {
             return;
-          } else {
+          } 
             // Tengo que crear la lista
-            this.deseosService.crearLista(data.titulo);
-          }
+           const listaId = this.deseosService.crearLista(data.titulo);
+
+           console.log(data);
+           this.router.navigateByUrl(`/tabs/tab1/agregar/${ listaId }`);
         }
       }
     ]
